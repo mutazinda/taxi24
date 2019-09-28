@@ -92,12 +92,13 @@ app.get("/invoice", async function(req, res) {
   const get_invoice = rez.rows;
   return res.render("invoice.html", { get_invoice });
 });
-app.post('/lise', async function(req, res) {
+
+app.post('/near', async function(req, res) {
   // show list of all students
 const data = {location_name  : req.body.location_name, driver_name : req.body.driver_name, distance_km  : req.body.distance_km} 
-   const rez = await client.query("SELECT location_name, driver_name, distance_km FROM driver_tax where location_name=($1)", [data.location_name]);
-const driver_tax = rez.rows;
-return res.render("contacte.html", { driver_tax });
+   const rez = await client.query("SELECT location_name, driver_name, distance_km FROM driver_tax where location_name='remera' ");
+const driver_tax  = rez.rows;
+return res.render("outpute.html", { driver_tax  });
 });
 app.post('/list', async function(req, res) {
 const data = { driver_id  : req.body.driver_id, driver_name  : req.body.driver_name, availability  : req.body.availability}
