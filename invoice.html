@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>INVOICE</title></head>
+<body>
+ <h1>INVOICE</h1>
+  <table border="1" cellspacing="22" align="center">
+<tr><th>invoice_id</th><th>distance_km</th><th>amount</th></tr>
+ {% for get_invoice in get_invoice %} 
+<tr><td>{{ get_invoice.invoice_id }} </td><td>{{ get_invoice.distance_km }}</td><td>{{ get_invoice.amount }}</td></tr>
+{% endfor %}
+</table>
+  </body>
+</html>

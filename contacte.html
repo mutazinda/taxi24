@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Students</title></head>
+<body>
+ <h1>Drivers</h1>
+  <table border="0" cellspacing="22" align="center">
+<tr><th>location_name</th><th>driver_name</th><th>distance_km</th></tr>
+ {% for driver_tax in driver_tax %} 
+<tr><td>{{ driver_tax.location_name }} </td><td>{{ driver_tax.driver_name }}</td><td>{{ driver_tax.distance_km }}</td></tr>
+{% endfor %}
+</table>
+  </body>
+</html>

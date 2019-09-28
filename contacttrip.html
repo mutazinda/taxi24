@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Students</title></head>
+<body>
+ <h1>Drivers</h1>
+  <table border="0" cellspacing="22" align="center">
+<tr><th>trip_id</th><th>driver_name</th><th>rider_name</th><th>status</th></tr>
+ {% for trip_view in trip_view %} 
+<tr><td>{{ trip_view.trip_id }} </td><td>{{ trip_view.driver_name }}</td><td>{{ trip_view.rider_name }}</td><td>{{ trip_view.status }}</td></tr>
+{% endfor %}
+</table>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head><title></title>
+    <style>
+        form {
+            position:absolute;
+  background: #fff;
+  padding: 4em 4em 2em;
+  max-width: 400px;
+  margin: 50px 50px 0px 50px;
+  box-shadow: 0 0 1em #222;
+  border-radius: 2px;}
+   
+  #block3{
+      
+        position: relative;
+        margin: 50px 50px 0px 50px;
+        float:right;
+     
+        width: 400px;
+        height:300px;
+    }
+    .block4{
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+	background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+	background-color:grey;
+    border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 17px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+    }
+    .butt{
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+	background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+	background-color:grey;
+    border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 17px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+    }
+    #butt1{
+    border:1px solid;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 17px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+    }
+    .bottom{
+        position:absolute;
+        bottom: 60pt; right: 0;
+    left: 0;
+
+    text-align: center;
+    }
+
+    </style>
+    </head>
+<body>
+<div class="content">
+   <div class= "block1"> <form class="form" action='/riders' method="post" >
+        <div class="block2"></div>
+       <input type="text" placeholder="rider_id" name="rider_id" required /><br><br>
+        
+    <input  class="butt" type="submit" value="get a rider" id="submit" onclick="reba()">  
+     
+    <a href="/allrider" action="" class="block4" data-rel="back">all riders</a>
+      </form>
+</div>
+<div id="block3"> </div>
+</div>
+</div>
+<div>
+    
+<a href="#"  class="bottom" data-rel="back" onclick="history.go(-1)" Go Back >></a>
+    </div>
+<script> 
+
+   function reba() { 
+document.getElementById("block3").innerHTML='<object type="text/html" data="contactrider.html"></object>';
+document.getElementByClass("form").reset();
+}
+   
+  </script> 
+</body>
+</html>

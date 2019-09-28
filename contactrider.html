@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Students</title></head>
+<body>
+ <h1>Riders</h1>
+  <table border="0" cellspacing="22" align="center">
+<tr><th>rider_id</th><th>rider_name</th></tr>
+ {% for rider in rider %} 
+<tr><td>{{ rider.rider_id }} </td><td>{{ rider.rider_name }}</td></tr>
+{% endfor %}
+</table>
+  </body>
+</html>
